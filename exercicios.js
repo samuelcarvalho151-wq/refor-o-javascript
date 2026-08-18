@@ -405,8 +405,12 @@ if (media >= 7) {
 // display: none
 // ------------------------------------------------------------
 
+    let div = document.querySelector("div");
+    let botao = document.getElementById("mostrar-esconder");
 
-
+    botao.addEventListener("click", function() {
+        div.classList.toggle("escondido");
+    });
 
 // EXERCÍCIO 24 - Lista de tarefas
 // Esse exercício é a atividade principal!
