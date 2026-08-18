@@ -439,8 +439,36 @@ if (media >= 7) {
 // O cronômetro deve contar segundos e minutos.
 // Dica: use setInterval() para contar e clearInterval() para pausar.
 // ------------------------------------------------------------
+    let cronometro;
+    let segundos = 0;
+    let minutos = 0;
+    let H1 = document.querySelector("h1");
 
+    document.getElementById("iniciar").addEventListener("click", function() {
+        if (!cronometro) {
+            cronometro = setInterval(function() {
+                segundos++;
+                if (segundos === 60) {
+                    segundos = 0;
+                    minutos++;
+                }
+                H1.textContent = (minutos < 10 ? "0" + minutos : minutos) + ":" + (segundos < 10 ? "0" + segundos : segundos);
+            }, 1000);
+        }
+    });
 
+    document.getElementById("pausar").addEventListener("click", function() {
+        clearInterval(cronometro);
+        cronometro = null;
+    });
+
+    document.getElementById("resetar").addEventListener("click", function() {
+        clearInterval(cronometro);
+        cronometro = null;
+        segundos = 0;
+        minutos = 0;
+        h1.textContent = "00:00";
+    });
 
 
 // EXERCÍCIO 26 - Quiz de perguntas
