@@ -172,9 +172,11 @@ if (media >= 7) {
 // Mostre cada número no console.
 // No final, mostre "Feliz Ano Novo!" (ou qualquer mensagem).
 // ------------------------------------------------------------
-
-
-
+     for (let i = 10; i >= 0; i--) {
+        console.log(i);
+        
+     }
+     console.log("Feliz Ano Novo!");
 
 // EXERCÍCIO 11 - Somar números
 // Crie uma variável N com um número qualquer.
