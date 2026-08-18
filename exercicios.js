@@ -351,6 +351,7 @@ if (media >= 7) {
 //  no HTML ou usar o index.html que já existe.
 //  Peça ajuda ao professor se precisar do HTML!
 // ============================================================
+    
 
 
 // EXERCÍCIO 21 - Mudar cor de fundo
@@ -359,8 +360,21 @@ if (media >= 7) {
 // Dica: document.body.style.backgroundColor = 'red'
 // ------------------------------------------------------------
 
+ btnvermelho = document.getElementById("vermelho");
+ btnverde = document.getElementById("verde");
+ btnazul = document.getElementById("azul");
 
+ btnvermelho.addEventListener("click", function() {
+     document.body.style.backgroundColor = "red";
+ });
 
+ btnverde.addEventListener("click", function() {
+     document.body.style.backgroundColor = "green";
+ });
+
+ btnazul.addEventListener("click", function() {
+     document.body.style.backgroundColor = "blue";
+ });
 
 // EXERCÍCIO 22 - Contador
 // Crie no HTML: um <h1> com o número 0, e dois botões (+ e -).
