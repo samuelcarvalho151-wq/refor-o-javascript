@@ -383,8 +383,18 @@ if (media >= 7) {
 // Dica: use uma variável para guardar o valor do contador
 // e atualize o textContent do <h1> a cada clique.
 // ------------------------------------------------------------
+    let contador = 0;
+    let h1 = document.querySelector("h1");
 
+    document.getElementById("mais").addEventListener("click", function() {
+        contador++;
+        h1.textContent = contador;
+    });
 
+    document.getElementById("menos").addEventListener("click", function() {
+        contador--;
+        h1.textContent = contador;
+    });
 
 
 // EXERCÍCIO 23 - Mostrar e esconder
