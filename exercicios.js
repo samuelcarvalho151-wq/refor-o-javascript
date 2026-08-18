@@ -514,7 +514,37 @@ if (media >= 7) {
 // Ao clicar, gerar uma senha aleatória e mostrar na tela.
 // Dica: crie uma string com os caracteres possíveis e use
 // Math.random() para escolher caracteres aleatórios.
-// ------------------------------------------------------------
+// EXERCÍCIO 27 - Gerador de senha
+
+
+const campoTamanho = document.getElementById("tamanho");
+const checkMaiusculas = document.getElementById("maiusculas");
+const checkNumeros = document.getElementById("numeros");
+const checkSimbolos = document.getElementById("simbolos");
+const botaoGerar = document.getElementById("gerar");
+const displaySenha = document.getElementById("resultado");
+
+botaoGerar.addEventListener("click", () => {
+ 
+  const tamanho = parseInt(campoTamanho.value);
+  
+  
+  let caracteresPossiveis = "abcdefghijklmnopqrstuvwxyz";
+  
+  if (checkMaiusculas.checked) caracteresPossiveis += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  if (checkNumeros.checked) caracteresPossiveis += "0123456789";
+  if (checkSimbolos.checked) caracteresPossiveis += "!@#$%^&*()_+-=[]{}|;:,.<>?";
+
+  let senhaGerada = "";
+  
+  
+  for (let i = 0; i < tamanho; i++) {
+    const indiceAleatorio = Math.floor(Math.random() * caracteresPossiveis.length);
+    senhaGerada += caracteresPossiveis[indiceAleatorio];
+  }
+
+  displaySenha.innerText = senhaGerada;
+});
 
 
 
@@ -527,3 +557,5 @@ if (media >= 7) {
 // ------------------------------------------------------------
 
 
+
+   
