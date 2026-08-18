@@ -123,8 +123,12 @@ if (media >= 7) {
 // Compare as jogadas e mostre quem ganhou.
 // ------------------------------------------------------------
 
+     let pedrapapeltesoura = ['pedra', 'papel', 'tesoura'];
+     let usuario = pedrapapeltesoura[Math.floor(Math.random() * 3)];
+     let computador = pedrapapeltesoura[Math.floor(Math.random() * 3)];
 
-
+     console.log("Usuário:", usuario);
+     console.log("Computador:", computador);
 
 // EXERCÍCIO 8 - Sistema de notas
 // Crie uma variável com uma nota de 0 a 10.
