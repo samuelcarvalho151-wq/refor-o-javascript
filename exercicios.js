@@ -479,8 +479,33 @@ if (media >= 7) {
 //   { pergunta: "...", opcoes: ["a", "b", "c"], correta: 1 }
 // ------------------------------------------------------------
 
-
-
+   let perguntas = [
+       {
+           pergunta: "Qual é a capital do Brasil?",
+           opcoes: ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador"],
+           correta: 2
+       },
+       {
+           pergunta: "Qual é o maior planeta do sistema solar?",
+           opcoes: ["Marte", "Júpiter", "Saturno", "Urano"],
+           correta: 1
+       },
+       {
+           pergunta: "Quanto é 2 + 2?",
+           opcoes: ["3", "4", "5", "6"],
+           correta: 1
+       },
+       {
+           pergunta: "Qual é a fórmula química da água?",
+           opcoes: ["H2O", "CO2", "NaCl", "O2"],
+           correta: 0
+       },
+       {
+           pergunta: "Quem escreveu 'Dom Casmurro'?",
+           opcoes: ["Machado de Assis", "José Saramago", "Carlos Drummond de Andrade", "Garcia Márquez"],
+           correta: 0
+       }
+   ];
 
 // EXERCÍCIO 27 - Gerador de senha
 // Crie no HTML: um campo para o tamanho da senha,
