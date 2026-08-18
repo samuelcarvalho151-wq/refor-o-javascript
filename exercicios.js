@@ -111,6 +111,7 @@ if (media >= 7) {
         console.log("Sobrepeso");
     } else {
         console.log("Obesidade");
+        
     }
 
 
