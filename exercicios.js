@@ -256,8 +256,9 @@ if (media >= 7) {
 // Dica: use split('') para virar array, reverse() para
 // inverter, e join('') para voltar a ser string.
 // ------------------------------------------------------------
-
-
+    function inverter(string) {
+        return string.split('').reverse().join('');
+    }
 
 
 // EXERCÍCIO 16 - Contar vogais
