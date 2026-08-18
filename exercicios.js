@@ -82,7 +82,12 @@ if (media >= 7) {
 // Se não, mostre "Menor de idade".
 // ------------------------------------------------------------
 
-
+   let idade = 29;
+   if (idade >=18){
+    console.log("maior de idade")
+   }else{
+    console.log("menor de idade")
+   }
 
 
 // EXERCÍCIO 6 - Calculadora de IMC
@@ -94,8 +99,19 @@ if (media >= 7) {
 //   25 até 29.9    = "Sobrepeso"
 //   30 ou mais     = "Obesidade"
 // ------------------------------------------------------------
+    let peso = 70;
+    let altura = 1.75;
+    let imc = peso /  (altura * altura);
 
-
+    if (imc < 18.5) {
+        console.log("Abaixo do peso");
+    } else if (imc >= 18.5 && imc <= 24.9) {
+        console.log("Peso normal");
+    } else if (imc >= 25 && imc <= 29.9) {
+        console.log("Sobrepeso");
+    } else {
+        console.log("Obesidade");
+    }
 
 
 // EXERCÍCIO 7 - Pedra, papel e tesoura
