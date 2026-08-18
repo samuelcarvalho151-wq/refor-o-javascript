@@ -337,8 +337,11 @@ if (media >= 7) {
 // Mostre o array de pares no console.
 // Dica: use .filter(function(numero) { return numero % 2 === 0 })
 // ------------------------------------------------------------
-
-
+    let Numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+    let pares = Numeros.filter(function(numero) {
+        return numero % 2 === 0;
+    });
+    console.log("Números pares:", pares);
 
 
 // ============================================================
