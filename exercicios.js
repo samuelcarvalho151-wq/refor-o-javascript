@@ -161,8 +161,10 @@ if (media >= 7) {
 //   "5 x 2 = 10"
 //   ... até "5 x 10 = 50"
 // ------------------------------------------------------------
-
-
+     let numeroTabuada = 5;
+     for (let i = 1; i <= 10; i++) {
+         console.log(`${numeroTabuada} x ${i} = ${numeroTabuada * i}`);
+     }
 
 
 // EXERCÍCIO 10 - Contagem regressiva
