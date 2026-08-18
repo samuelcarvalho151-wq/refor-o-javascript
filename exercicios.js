@@ -293,8 +293,15 @@ if (media >= 7) {
 // Remova o último item com pop() e mostre a lista novamente.
 // ------------------------------------------------------------
 
-
-
+    let listaCompras = [];
+    listaCompras.push("Maçã");
+    listaCompras.push("Banana");
+    listaCompras.push("Laranja");
+    listaCompras.push("Uva");
+    listaCompras.push("Pera");
+    console.log(listaCompras);
+    listaCompras.pop();
+    console.log(listaCompras);
 
 // EXERCÍCIO 18 - Maior e menor
 // Crie um array com 8 números diferentes.
