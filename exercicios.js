@@ -111,7 +111,7 @@ if (media >= 7) {
         console.log("Sobrepeso");
     } else {
         console.log("Obesidade");
-        
+
     }
 
 
@@ -325,8 +325,11 @@ if (media >= 7) {
 // Dica: use .sort() e .reverse()
 // ------------------------------------------------------------
 
-   
-
+    let nomes = ["Ana", "Carlos", "Beatriz", "Daniel", "Elena", "Felipe"];
+    nomes.sort();
+    console.log("Em ordem alfabética:", nomes);
+    nomes.reverse();
+    console.log("Em ordem alfabética inversa:", nomes);
 
 // EXERCÍCIO 20 - Filtrar pares
 // Crie um array com os números de 1 a 20.
