@@ -238,8 +238,15 @@ if (media >= 7) {
 // Dica: use um for de 2 até numero-1 e verifique se
 // algum divide o número sem resto (numero % i === 0).
 // ------------------------------------------------------------
-
-
+    function ehPrimo(numero) {
+        if (numero <= 1) return false;
+        for (let i = 2; i < numero; i++) {
+            if (numero % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 
 
 // EXERCÍCIO 15 - Inverter string
