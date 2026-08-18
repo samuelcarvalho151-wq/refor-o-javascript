@@ -309,10 +309,13 @@ if (media >= 7) {
 // Mostre os dois no console.
 // Dica: use Math.max(...array) e Math.min(...array)
 // Ou tente fazer com um for (mais desafiador!).
-// ------------------------------------------------------------
+// ------------------------------------------------------------ 
 
-
-
+    let numeros = [5, 12, 3, 8, 15, 7, 20, 1];
+    let maior = Math.max(...numeros);
+    let menor = Math.min(...numeros);
+    console.log("Maior:", maior);
+    console.log("Menor:", menor);
 
 // EXERCÍCIO 19 - Ordenar nomes
 // Crie um array com 6 nomes de pessoas.
@@ -321,7 +324,7 @@ if (media >= 7) {
 // Dica: use .sort() e .reverse()
 // ------------------------------------------------------------
 
-
+   
 
 
 // EXERCÍCIO 20 - Filtrar pares
