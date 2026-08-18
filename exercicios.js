@@ -201,8 +201,17 @@ if (media >= 7) {
 // Dica: use prompt() para pedir o palpite do usuário.
 // ------------------------------------------------------------
 
-
-
+    let secreto = Math.floor(Math.random() * 10) + 1;
+    let palpite;
+    while (palpite !== secreto) {
+        palpite = parseInt(prompt("Adivinhe o número (1-10):"));
+        if (palpite > secreto) {
+            console.log("Maior");
+        } else if (palpite < secreto) {
+            console.log("Menor");
+        }
+    }
+    console.log("Parabéns! Acertou!");
 
 // ============================================================
 //  BLOCO 4 - FUNÇÕES
