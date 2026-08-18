@@ -268,8 +268,17 @@ if (media >= 7) {
 // Dica: transforme em minúscula com .toLowerCase()
 // e verifique cada letra com um for.
 // ------------------------------------------------------------
-
-
+    function contarVogais(palavra) {
+        palavra = palavra.toLowerCase();
+        let vogais = "aeiou";
+        let contador = 0;
+        for (let i = 0; i < palavra.length; i++) {
+            if (vogais.includes(palavra[i])) {
+                contador++;
+            }
+        }
+        return contador;
+    }
 
 
 // ============================================================
