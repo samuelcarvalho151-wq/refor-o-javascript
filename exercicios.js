@@ -416,7 +416,17 @@ if (media >= 7) {
 // Esse exercício é a atividade principal!
 // Abra o arquivo script.js da atividade e complete os níveis.
 // ------------------------------------------------------------
+  let input = document.getElementById("tarefa");
+  let lista = document.getElementById("lista");
 
+  input.addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+          let tarefa = document.createElement("li");
+          tarefa.textContent = input.value;
+          lista.appendChild(tarefa);
+          input.value = "";
+      }
+  });
 
 // ============================================================
 //  BLOCO 7 - DOM + LÓGICA COMBINADA (Desafio!)
