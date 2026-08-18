@@ -556,6 +556,11 @@ botaoGerar.addEventListener("click", () => {
 // Dica: mude o atributo src da <img> com JavaScript.
 // ------------------------------------------------------------
 
-
-
-   
+    
+    let imagens = [
+        "https://via.placeholder.com/400x300?text=Imagem+1",
+        "https://via.placeholder.com/400x300?text=Imagem+2",
+        "https://via.placeholder.com/400x300?text=Imagem+3"
+    ];
+    let indiceAtual = 0;
+    let img = document.querySelector("img");
